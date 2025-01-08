@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Todo-Site</title>
+</head>
+<body class="m-5">
+    <header> 
+        <h1> Todo </h1>
+        <p> Create, view, update, and delete your todos! </p>
+    </header>
+    <button class="newTodoBtn btn btn-primary"> New Todo </button>
+    <div class="allTodos"></div>
+    
+    <form class="newTodoForm d-none w-25">
+        <h2> Add new Todo </h2>
+        <div class="my-3">
+            <label> Todo Title </label>
+            <input type="text" class="addTitleInput form-control" placeholder="What are we doing?" required="true">
+        </div>
+        <div class="my-3">
+            <label> Description </label>
+            <textarea class="addDescInput form-control" placeholder="What are we doing in detail?" required="true"></textarea>
+        </div>
+        <div class="my-3">
+            <label> Deadline </label>
+            <input type="date" class="addDateInput form-control" required="true">
+        </div>
+        <button type="submit" class="btn btn-success"> Submit </button>
+    </form>
+
+    <form class="editTodoForm d-none w-25">
+        <h2> Edit todo </h2>
+        <div class="my-3">
+            <label> Todo Title </label>
+            <input type="text" class="editTitleInput form-control" placeholder="What are we doing?" required="true">
+        </div>
+        <div class="my-3">
+            <label> Description </label>
+            <textarea class="editDescInput form-control" placeholder="What are we doing in detail?" required="true"></textarea>
+        </div>
+        <div class="my-3">
+            <label> Deadline </label>
+            <input type="date" class="editDateInput form-control" required="true">
+        </div>
+        
+        <button type="submit" class="btn btn-success"> Submit </button>
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
